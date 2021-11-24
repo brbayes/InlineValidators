@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<RootNamespace>InlineValidators</RootNamespace>
+	<AssemblyName>InlineValidators</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+	<IncludeSymbols>true</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageProjectUrl>https://github.com/brbayes/InlineValidators</PackageProjectUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<AssemblyVersion>1.0.0.0</AssemblyVersion>
+	<FileVersion>1.0.0</FileVersion>
+	<VersionPrefix>1.0.0</VersionPrefix>
+	<VersionSuffix>beta.1</VersionSuffix>
+	<Authors>Brandyn Bayes</Authors>
+	<Company>Brandyn Bayes</Company>
+	<Product>Inline Validators</Product>
+	<Description>Inline Validators is a utility library for validating arguments and parameters.</Description>
+	<Copyright>Copyright © Brandyn Bayes 2021</Copyright>
+	<Summary>Inline Validators is a utility library for validating arguments and parameters.</Summary>
+	<NeutralLanguage>en-US</NeutralLanguage>
+	<Title>Inline Validators</Title>
+	<PackageId>InlineValidators</PackageId>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <None Include="..\LICENSE" Pack="true" PackagePath="LICENSE" />
+	<None Include="..\README.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
+
+</Project>

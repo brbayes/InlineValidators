@@ -1,0 +1,29 @@
+name: Build Library
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.4.0
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1.8.2
+      with:
+        dotnet-version: 6.0.*
+    - name: Build
+      run: dotnet build InlineValidators.sln --configuration Release
+    - name: Tests
+      run: dotnet test InlineValidators.sln --configuration Release
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: libs
+        path: |
+          InlineValidators/bin/Release/*.nupkg
+          InlineValidators/bin/Release/*.snupkg
