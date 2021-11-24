@@ -1,6 +1,4 @@
 # Inline Validators
-[![Build Library](https://github.com/brbayes/InlineValidators/actions/workflows/build.workflow.yml/badge.svg)](https://github.com/brbayes/InlineValidators/actions/workflows/build.workflow.yml)
-
 Welcome to the Inline Validators library! This library is designed to simplify the validation of arguments and parameters by simplifying each validation down to a single line.
 
 ## Examples
